@@ -6,6 +6,7 @@ const cors = require('cors')
 
 app.use(cors())
 app.use(bodyParser.json())
+app.use(express.static('build'))
 //var logger = morgan(':method :url :status :res[content-length] - :response-time ms :resp')
 //app.use(logger)
 
